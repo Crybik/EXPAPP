@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C6C75FE-5F38-41DF-9D7F-0038A2440002}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EXPAPP</RootNamespace>
+    <AssemblyName>EXPAPP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUI.WPF.1.0.9\lib\net45\FirstFloor.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HandyControl, Version=3.3.0.0, Culture=neutral, PublicKeyToken=45be8712787a1e5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\HandyControls.3.3.11\lib\net45\HandyControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI">
+      <HintPath>..\..\..\..\Desktop\home\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.31\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernWpf, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernWpfUI.0.9.4\lib\net45\ModernWpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernWpf.Controls, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernWpfUI.0.9.4\lib\net45\ModernWpf.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI">
+      <HintPath>..\..\..\..\Desktop\home\SunnyUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TomsToolbox.Essentials, Version=2.7.4.0, Culture=neutral, PublicKeyToken=60b39f873a8e3fc2, processorArchitecture=MSIL">
+      <HintPath>..\packages\TomsToolbox.Essentials.2.7.4\lib\net45\TomsToolbox.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="TomsToolbox.ObservableCollections, Version=2.7.4.0, Culture=neutral, PublicKeyToken=60b39f873a8e3fc2, processorArchitecture=MSIL">
+      <HintPath>..\packages\TomsToolbox.ObservableCollections.2.7.4\lib\net45\TomsToolbox.ObservableCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="TomsToolbox.Wpf, Version=2.7.4.0, Culture=neutral, PublicKeyToken=60b39f873a8e3fc2, processorArchitecture=MSIL">
+      <HintPath>..\packages\TomsToolbox.Wpf.2.7.4\lib\net45\TomsToolbox.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.DropDownButtonAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.HyperlinkButtonAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.NavigationViewItemAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.NumberBoxAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.PersonPictureAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.ProgressBarAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.ProgressRingAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.RatingControlAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.RepeaterAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.SplitButtonAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.ToggleSplitButtonAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Automation.Peers.ToggleSwitchAutomationPeer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.ColorPaletteResources.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AppBarButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AppBarElementContainer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AppBarSeparator.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AppBarToggleButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AutoSuggestBox.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AutoSuggestBoxQuerySubmittedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AutoSuggestBoxSuggestionChosenEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.AutoSuggestBoxTextChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.BackRequestedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.BitmapIcon.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.BitmapIconSource.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.CommandBar.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.CommandBarFlyout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialog.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialogButtonClickDeferral.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialogButtonClickEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialogClosedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialogClosingDeferral.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialogClosingEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentDialogOpenedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContentPresenterEx.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ContextFlyoutService.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.DropDownButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ElementAnimationCompleted.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ElementAnimator.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ElementFactory.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ElementFactoryGetArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ElementFactoryRecycleArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FlowLayout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FlowLayoutAnchorInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FlowLayoutState.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Flyout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FlyoutPresenter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FlyoutService.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FontIcon.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FontIconFallback.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.FontIconSource.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Frame.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.GridView.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.GridViewHeaderItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.GridViewItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.HyperlinkButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ICommandBarElement.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IconElement.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IconElementConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IconSource.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IElementFactory.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IElementFactoryShim.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IKeyIndexMapping.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IndexPath.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.INumberBoxNumberFormatter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.IScrollAnchorProvider.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemClickEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemClickEventHandler.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemsRepeater.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemsRepeaterElementClearingEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemsRepeaterElementIndexChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemsRepeaterElementPreparedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemsRepeaterScrollHost.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ItemsSourceView.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Layout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.LayoutContext.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.LayoutPanel.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ListView.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ListViewBase.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ListViewBaseHeaderItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ListViewBaseItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ListViewHeaderItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ListViewItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.MenuFlyout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.MenuFlyoutPresenter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationView.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewBackRequestedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewDisplayModeChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItemBase.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItemCollapsedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItemExpandingEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItemHeader.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItemInvokedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewItemSeparator.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewPaneClosingEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewSelectionChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NavigationViewTemplateSettings.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NonVirtualizingLayout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NonVirtualizingLayoutContext.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NumberBox.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.NumberBoxValueChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Page.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.PathIcon.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.PathIconSource.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.PersonPicture.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.PersonPictureTemplateSettings.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.AutoSuggestBoxListView.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.AutoSuggestBoxListViewItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.BindingProxy.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.BorderHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CalendarHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ColumnDefinitionHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ColumnMajorUniformToLargestGridLayout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ComboBoxHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarFlyoutCommandBar.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarFlyoutCommandBarTemplateSettings.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarFlyoutCommandBarTemplateSettingsProxy.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarFlyoutToolBar.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarOverflowPanel.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarOverflowPresenter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarPanel.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CommandBarToolBar.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ControlHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.CornerRadiusFilterConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.DataGridCellPresenter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.DataGridHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.DataGridRowHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.DatePickerHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.FlyoutBase.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.FocusVisualHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.HyperlinkHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.IsGridViewConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.MenuPopup.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.MultiSelectHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.NavigationViewItemPresenter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.OpeningAnimationHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.OrConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.PasswordBoxHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.PivotHeaderScrollViewer.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.PivotHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.PlacementRectangleConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.PopupEx.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.PressHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ProgressBarTemplateSettings.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ProgressRingTemplateSettings.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.RichTextBoxHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.RowDefinitionHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ScrollBarHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ScrollBarThumbHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ScrollViewerHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.SharedSizeGroupConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.SliderAutoToolTipHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.SplitViewTemplateSettings.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TabControlHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TabItemHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TextBoxHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TextControlContentHostHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ThemeShadowChrome.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TitleBarButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TitleBarControl.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.TreeViewItemHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.ValidationHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.VisualStateGroupListener.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.Primitives.WindowHelper.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ProgressBar.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ProgressRing.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RadioButtons.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RadioMenuItem.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RatingControl.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RatingItemFontInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RatingItemImageInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RatingItemInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RatingItemPathInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RecyclePool.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.RecyclingElementFactory.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ScrollViewerEx.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SelectionModel.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SelectionModelChildrenRequestedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SelectionModelSelectionChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SelectTemplateEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SimpleStackPanel.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SplitButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SplitButtonClickEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SplitView.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SplitViewPaneClosingEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.StackLayout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.StackLayoutState.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SymbolIcon.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.SymbolIconSource.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.TextContextMenu.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.TitleBar.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ToggleSplitButton.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ToggleSplitButtonIsCheckedChangedEventArgs.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.ToggleSwitch.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.UniformGridLayout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.UniformGridLayoutState.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.VirtualizingLayout.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.VirtualizingLayoutContext.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Controls.XamlControlsResources.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.DesignTime.Design.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.DesignTime.IntellisenseResources.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.DesignTime.IntellisenseResourcesBase.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.DynamicColorExtension.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.DynamicColorExtensionConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.KeyTimeExtension.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.StaticColorExtension.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.StaticResourceExtension.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.TextContextMenuExtension.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.ThemeResouceExtensionConverter.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Markup.ThemeResourceExtension.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.CubicBezierEase.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.DrillInNavigationTransitionInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.EntranceNavigationTransitionInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.FadeInThemeAnimation.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.FadeOutThemeAnimation.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.NavigationThemeTransition.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.NavigationTransitionInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.SlideNavigationTransitionInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.SuppressNavigationTransitionInfo.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.Transition.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Media.Animation.TransitionCollection.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.Navigation.Extensions.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.ResourceDictionaryEx.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.SimpleVisualStateManager.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.ThemeDictionary.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.ThemeManager.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.ThemeResources.datasource" />
+    <None Include="Properties\DataSources\ModernWpf.VisualTree.datasource" />
+    <None Include="Properties\DataSources\System.Windows.Threading.DispatcherExtensions.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net45\System.Runtime.WindowsRuntime.targets" Condition="Exists('..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net45\System.Runtime.WindowsRuntime.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net45\System.Runtime.WindowsRuntime.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Runtime.WindowsRuntime.4.6.0\build\net45\System.Runtime.WindowsRuntime.targets'))" />
+  </Target>
+</Project>
